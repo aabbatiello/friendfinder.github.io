@@ -1,5 +1,4 @@
 
-// const path = require('path');
 const friends = require('../data/friend.js');
 const express = require('express');
 const bodyParser = require('body-parser');
