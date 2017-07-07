@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
 	});
 
 // Sends User to survey
-router.('/survey', function(req, res) {
+router.get('/survey', function(req, res) {
 		res.sendFile(path.join(__dirname, '../public/survey.html'));
 	});
 

@@ -5,15 +5,13 @@
 
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<!-- Font Awesome Glyphicons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 	<!-- Chosen -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+	
 
 </head>
 <body>
@@ -38,7 +36,7 @@
             <option value="3">Push your friend into the circle </option>
             <option value="4">Stay against the Wall</option>
             <option value="5">Do a dance you invented</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q1_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      	</select>
 
 		<h3><strong>Question 2</strong></h3>
 		<h4>You make a day of going to the modern art museum, but this month they're showing an exhibit of solid white canvases. You...</h4>
@@ -49,7 +47,7 @@
             <option value="3">Think they're cool</option>
             <option value="4">Adore them</option>
             <option value="5">Don't get it</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q2_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      </select>
 
 
 		<h3><strong>Question 3</strong></h3>
@@ -61,7 +59,7 @@
             <option value="3">Casablanca</option>
             <option value="4">Die Hard</option>
             <option value="5">Alice in Wonderland</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q3_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      	</select>
 
 
 		<h3><strong>Question 4</strong></h3>
@@ -73,7 +71,8 @@
             <option value="3">To contact aliens</option>
             <option value="4">Text your friends late in the night</option>
             <option value="5">Weigh down your pocket</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q4_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      	</select>
+
 
 
 		<h3><strong>Question 5</strong></h3>
@@ -85,10 +84,10 @@
             <option value="3">Making the weather always sunny</option>
             <option value="4">Making purple people</option>
             <option value="5">Brining peace to all</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q5_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+           
+      	</select>
 
-
-		<
+		
 		<br>
 		<br>
 
@@ -128,8 +127,14 @@
 	  </div>
 	</div>
 
-  <script type="text/javascript">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+	  
 
+
+  <script type="text/javascript">
+  	$('.chosen-select').chosen({ width: "200px" });
 
     // Capture the form inputs 
     $("#submit").on("click", function(){
