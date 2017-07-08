@@ -17,8 +17,16 @@ app.use(bodyParser.json({
 }));
 
 
-//Here i need logic to examine my peanuts characters and determine based on the users responese which peanuts character there most alike
+app.post('/api/friends',function(req, res) {
+		console.log(req.body)
 
 
+//Here i need logic to examine my peanuts characters and determine based on the users response which peanuts character there most alike
+//create the logic to determine based on user selection value the match or total to the character
+//use if else and for loop statments 
+
+
+
+	});
 
 module.exports = router;
